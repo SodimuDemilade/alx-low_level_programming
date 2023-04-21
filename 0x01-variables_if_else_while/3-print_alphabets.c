@@ -10,13 +10,15 @@
 
 int main(void)
 {
-	for (int i = 'a' ; i <= 'z' ; i++)
+	int i, j;
+
+	for (i = 'a' ; i <= 'z' ; i++)
 	{
 		putchar(i);
 	}
-	for (int i = 'A' ; i <= 'Z' ; i++)
+	for (j = 'A' ; j <= 'Z' ; j++)
 	{
-		putchar(i);
+		putchar(j);
 	}
 	return (0);
 }
