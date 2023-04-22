@@ -23,15 +23,12 @@ int main(void)
 			{
 				for (l = '0' ; l <= '9' ; l++)
 				{
-					if (l > k)
+					putchar(k);
+					putchar(l);
+					if (j != '8')
 					{
-						putchar(k);
-						putchar(l);
-						if (j != '8')
-						{
-							putchar(',');
-							putchar(' ');
-						}
+						putchar(',');
+						putchar(' ');
 					}
 				}
 			}
