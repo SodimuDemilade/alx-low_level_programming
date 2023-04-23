@@ -19,16 +19,20 @@ int main(void)
 			putchar(i);
 			putchar(j);
 			putchar(' ');
-			for (k = '0' ; k <= '9' ; k++)
+			for (k = '0' ; k <= '9'; k++)
 			{
 				for (l = '0' ; l <= '9' ; l++)
 				{
-					putchar(k);
-					putchar(l);
-					if (j != '8')
+					if (l > j)
 					{
+						putchar(k);
+						putchar(l);
 						putchar(',');
 						putchar(' ');
+					}
+					else
+					{
+						continue;
 					}
 				}
 			}
