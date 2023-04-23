@@ -16,15 +16,15 @@ int main(void)
 	{
 		for (j = '0' ; j <= '9'; j++)
 		{
-			putchar(i);
-			putchar(j);
-			putchar(' ');
 			for (k = '0' ; k <= '9'; k++)
 			{
 				for (l = '0' ; l <= '9' ; l++)
 				{
 					if (l > j)
 					{
+						putchar(i);
+						putchar(j);
+						putchar(' ');
 						putchar(k);
 						putchar(l);
 						putchar(',');
