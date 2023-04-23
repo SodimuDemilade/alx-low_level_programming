@@ -20,7 +20,7 @@ int main(void)
 			{
 				for (l = '0' ; l <= '9' ; l++)
 				{
-					if (((k + l) > (i + j)) && (k > i))
+					if (((k + l) > (i + j)) && (k >= i))
 					{
 						putchar(i);
 						putchar(j);
