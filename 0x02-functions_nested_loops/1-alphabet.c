@@ -1,5 +1,3 @@
-#ifndef HEADER_FILE
-#define HEADER_FILE
 #include "main.h"
 
 /**
@@ -7,12 +5,6 @@
  *
  * Return: Always 0.
  */
-
-int main(void)
-{
-	print_alphabet();
-	return (0);
-}
 
 void print_alphabet(void)
 {
@@ -24,4 +16,10 @@ void print_alphabet(void)
         }
         putchar('\n');
 }
-#endif
+
+int main(void)
+{
+        print_alphabet();
+        return (0);
+}
+
