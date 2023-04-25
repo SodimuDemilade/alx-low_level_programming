@@ -30,16 +30,5 @@ int _putchar(void)
         putchar(letter);
 	return (0);
 }
-
-int print_alphabet(void)
-{
-	int i;
-
-	for (i = 'a' ; i <= 'z' ; i++)
-	{
-		putchar(i);
-	}
-	putchar('\n');
-	return (0);
-}
+void print_alphabet(void);
 #endif
