@@ -9,7 +9,7 @@
  * Return: Always 0 (Success)
  */
 
-int _putchar(void)
+void _putchar(void)
 {
 	int letter;
         letter = '_';
@@ -28,5 +28,4 @@ int _putchar(void)
         putchar(letter);
         letter = 'r';
         putchar(letter);
-        return (0);
 }
