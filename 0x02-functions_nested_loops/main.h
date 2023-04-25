@@ -1,4 +1,4 @@
-#include <unistd.h>
+#include <stdio.h>
 
 /**
  * _putchar - writes the character c to stdout
@@ -7,7 +7,23 @@
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
-int _putchar(char * c)
+int _putchar(void)
 {
-	return (write(1, &c, 1));
+	int letter;
+	letter = '_';
+        putchar(letter);
+	letter = 'p';
+        putchar(letter);
+	letter = 'u';
+        putchar(letter);
+	letter = 't';
+        putchar(letter);
+	letter = 'c';
+        putchar(letter);
+	letter = 'h';
+        putchar(letter);
+	letter = 'a';
+        putchar(letter);
+	letter = 'r';
+        putchar(letter);
 }
