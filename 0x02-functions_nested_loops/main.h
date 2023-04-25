@@ -26,4 +26,5 @@ int _putchar(void)
         putchar(letter);
 	letter = 'r';
         putchar(letter);
+	return (0);
 }
