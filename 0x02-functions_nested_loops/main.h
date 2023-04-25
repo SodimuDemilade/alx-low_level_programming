@@ -1,5 +1,3 @@
-#ifndef HEADER_FILE
-#define HEADER_FILE
 #include <stdio.h>
 
 /**
@@ -9,26 +7,5 @@
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
-int _putchar(void)
-{
-	int letter;
-	letter = '_';
-        putchar(letter);
-	letter = 'p';
-        putchar(letter);
-	letter = 'u';
-        putchar(letter);
-	letter = 't';
-        putchar(letter);
-	letter = 'c';
-        putchar(letter);
-	letter = 'h';
-        putchar(letter);
-	letter = 'a';
-        putchar(letter);
-	letter = 'r';
-        putchar(letter);
-	return (0);
-}
+
 void print_alphabet(void);
-#endif
