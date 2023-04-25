@@ -1,3 +1,5 @@
+#ifndef HEADER_FILE
+#define HEADER_FILE
 #include "main.h"
 
 /**
@@ -22,3 +24,4 @@ void print_alphabet(void)
         }
         putchar('\n');
 }
+#endif
