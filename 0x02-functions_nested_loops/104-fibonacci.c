@@ -10,20 +10,20 @@
 
 int main(void)
 {
-        int count = 0;
-        long int a = 1;
-        long int b = 2;
-        int c;
+	int count = 0;
+	long int a = 1;
+	long int b = 2;
+	int c;
 
-        printf("%li, %li", a, b);
-        while (count < 96)
-        {
-                c = a + b;
-                a = b;
-                b = c;
-                printf(", %li", b);
-                count++;
-        }
-        putchar('\n');
-        return (0);
+	printf("%li, %li", a, b);
+	while (count < 96)
+	{
+		c = a + b;
+		a = b;
+		b = c;
+		printf(", %li", b);
+		count++;
+	}
+	putchar('\n');
+	return (0);
 }
