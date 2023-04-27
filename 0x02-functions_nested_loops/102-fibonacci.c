@@ -24,4 +24,5 @@ int main(void)
 		printf(", %d, %d", a, b);
 		count++;
 	}
+	return (0);
 }
