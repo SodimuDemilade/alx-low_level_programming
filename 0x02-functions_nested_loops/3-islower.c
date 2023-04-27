@@ -5,7 +5,7 @@
 /**
  * _islower - check the code.
  *
- * @c - parameter passed into _islower
+ * @c:  parameter passed into _islower
  *
  * Return: Always 0.
  */
