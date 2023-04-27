@@ -19,7 +19,8 @@ void times_table(void)
 		{
 			a = i * j;
 			b = a / 10 + '0';
-			putchar(' ');
+			if (j != 0)
+				putchar(' ');
 			if (b != '0')
 			{
 				putchar(b);
