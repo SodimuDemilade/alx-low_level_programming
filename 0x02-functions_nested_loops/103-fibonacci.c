@@ -15,15 +15,14 @@ int main(void)
 	long int c;
 	long int sum;
 
+	sum += 2;
 	while (a < 4000000 && b < 4000000)
 	{
-		if (a % 2 == 0)
-			sum += a;
-		if (b % 2 == 0)
-			sum += b;
 		c = a + b;
 		a = b;
 		b = c;
+		if (c % 2 == 0)
+			sum += a;
 	}
 	printf("%li", sum);
 	putchar('\n');
