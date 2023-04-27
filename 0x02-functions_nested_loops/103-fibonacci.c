@@ -22,7 +22,7 @@ int main(void)
 		a = b;
 		b = c;
 		if (c % 2 == 0)
-			sum += a;
+			sum += c;
 	}
 	printf("%li", sum);
 	putchar('\n');
