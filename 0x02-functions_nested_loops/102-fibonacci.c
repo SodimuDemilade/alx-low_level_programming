@@ -16,7 +16,7 @@ int main(void)
 	long int c;
 
 	printf("%li, %li", a, b);
-	while (count < 50)
+	while (count < 48)
 	{
 		c = a + b;
 		a = b;
