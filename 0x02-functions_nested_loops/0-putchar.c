@@ -1,5 +1,4 @@
-#include "main.h"
-#include <unistd.h>
+#include <stdio.h>
 
 /**
  * _putchar : test the function.
@@ -9,7 +8,24 @@
  * Return: Always 0 (Success)
  */
 
-int _putchar(int c)
+int main(void)
 {
-	return (write(1, &c, 1));
+	int letter;
+        letter = '_';
+        putchar(letter);
+        letter = 'p';
+        putchar(letter);
+        letter = 'u';
+        putchar(letter);
+        letter = 't';
+        putchar(letter);
+        letter = 'c';
+        putchar(letter);
+        letter = 'h';
+        putchar(letter);
+        letter = 'a';
+        putchar(letter);
+        letter = 'r';
+        putchar(letter);
+        return (0);
 }
