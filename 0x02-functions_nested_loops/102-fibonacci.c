@@ -15,13 +15,13 @@ int main(void)
 	int b = 2;
 	int c;
 
-	printf("%d, %d", a, b);
+	printf("%lli, %lli", a, b);
 	while (count < 50)
 	{
 		c = a + b;
 		a = b;
 		b = c;
-		printf(", %d", b);
+		printf(", %lli", b);
 		count++;
 	}
 	putchar('\n');
