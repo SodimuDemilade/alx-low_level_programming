@@ -11,15 +11,19 @@
 
 void times_table(void)
 {
-	int i, j, a;
+	int i, j, a, b;
 
 	for (i = 0 ; i <= 9 ; i++)
 	{
 		for (j = 0 ; j <= 9 ; j++)
 		{
 			a = i * j;
-			putchar((a/10)+'0');
-			putchar((a%10)+'0');
+			b = a / 10 + '0';
+			if (b != '0')
+			{
+				putchar(b);
+			}
+			putchar((a % 10) + '0');
 			putchar(',');
 			putchar(' ');
 		}
