@@ -11,17 +11,17 @@
 int main(void)
 {
         int count = 0;
-        int a = 1;
-        int b = 2;
+        long int a = 1;
+        long int b = 2;
         int c;
 
-        printf("%d, %d", a, b);
-        while (count < 98)
+        printf("%lli, %lli", a, b);
+        while (count < 96)
         {
                 c = a + b;
                 a = b;
                 b = c;
-                printf(", %d", b);
+                printf(", %lli", b);
                 count++;
         }
         putchar('\n');
