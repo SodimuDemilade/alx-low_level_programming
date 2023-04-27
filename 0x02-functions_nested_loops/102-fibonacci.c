@@ -11,17 +11,17 @@
 int main(void)
 {
 	int count = 0;
-	long long int a = 1;
-	long long int b = 2;
-	long long int c;
+	long int a = 1;
+	long int b = 2;
+	long int c;
 
-	printf("%lli, %lli", a, b);
+	printf("%li, %li", a, b);
 	while (count < 50)
 	{
 		c = a + b;
 		a = b;
 		b = c;
-		printf(", %lli", b);
+		printf(", %li", b);
 		count++;
 	}
 	putchar('\n');
