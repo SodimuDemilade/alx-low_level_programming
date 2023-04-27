@@ -4,6 +4,8 @@
 /**
  * sign - check the code
  *
+ * @c: Parameter description
+ *
  * Return: Always 0.
  *
  */
