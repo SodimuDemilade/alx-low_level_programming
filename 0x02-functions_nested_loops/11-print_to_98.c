@@ -24,6 +24,10 @@ void print_to_98(int n)
 			putchar('0' + b);
 			putchar('0' + c);
 		}
+		else if (i > 99)
+			{
+
+			}
 		else
 			putchar('0' + i);
 		if (i != 98)
