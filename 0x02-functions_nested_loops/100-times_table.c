@@ -19,7 +19,7 @@ void print_times_table(int n)
 
 	for (i = 0 ; i <= n ; i++)
 	{
-		for (j = n ; j <= 9 ; j++)
+		for (j = 0 ; j <= n ; j++)
 		{
 			a = i * j;
 			b = a / 10 + '0';
