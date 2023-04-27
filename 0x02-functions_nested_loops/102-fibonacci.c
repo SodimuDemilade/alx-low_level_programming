@@ -11,9 +11,9 @@
 int main(void)
 {
 	int count = 0;
-	int a = 1;
-	int b = 2;
-	int c;
+	long long int a = 1;
+	long long int b = 2;
+	long long int c;
 
 	printf("%lli, %lli", a, b);
 	while (count < 50)
