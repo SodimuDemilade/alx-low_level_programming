@@ -21,7 +21,7 @@ int main(void)
 		c = a + b;
 		a = b;
 		b = c;
-		printf(", %d, %d", a, b);
+		printf(", %d", b);
 		count++;
 	}
 	return (0);
