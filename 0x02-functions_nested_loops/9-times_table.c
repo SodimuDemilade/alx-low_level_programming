@@ -24,8 +24,17 @@ void times_table(void)
 				putchar(b);
 			}
 			putchar((a % 10) + '0');
+			if (j != 9)
 			putchar(',');
+			if (b != '0')
+			{
+				putchar(' ');
+			}
+			else
+			{
 			putchar(' ');
+			putchar(' ');
+			}
 		}
 		putchar('\n');
 	}
