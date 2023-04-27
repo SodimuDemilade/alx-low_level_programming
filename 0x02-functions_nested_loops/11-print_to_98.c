@@ -26,7 +26,7 @@ void print_to_98(int n)
 		}
 		else
 			putchar('0' + i);
-		if (1 != 98)
+		if (i != 98)
 		{
 		putchar(',');
 		putchar(' ');
