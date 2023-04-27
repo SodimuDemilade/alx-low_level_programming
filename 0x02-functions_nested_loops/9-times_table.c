@@ -34,6 +34,7 @@ void times_table(void)
 			{
 				putchar(' ');
 				putchar(' ');
+				putchar(' ');
 			}
 		}
 		putchar('\n');
