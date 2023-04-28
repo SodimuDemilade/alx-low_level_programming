@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * print_number - check the code.
+ * print_numbers - check the code.
  *
  */
 
