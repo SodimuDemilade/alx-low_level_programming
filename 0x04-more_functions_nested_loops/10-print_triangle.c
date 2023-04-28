@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdio.h>
-#include "main.c"
 
 /**
  * print_triangle - check the code.
