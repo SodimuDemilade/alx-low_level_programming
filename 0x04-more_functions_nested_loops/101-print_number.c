@@ -14,6 +14,8 @@ void print_number(int n)
 	
 	if (n == 0)
 		putchar('0');
+	else
+	{
 	while (n != 0)
 	{
 		reverse = reverse * 10;
@@ -24,5 +26,6 @@ void print_number(int n)
 	{	
 		putchar((reverse % 10) + '0');
 		reverse = reverse / 10;
+	}
 	}
 }
