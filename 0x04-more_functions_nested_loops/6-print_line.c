@@ -4,7 +4,7 @@
 /**
  * print_line - check the code.
  *
- * Return: check the code.
+ * @n: check the parameter.
  */
 
 void print_line(int n)
