@@ -8,7 +8,7 @@
  *
  */
 
-void _puts(int *str)
+void _puts(char *str)
 {
 	puts(str);
 }
