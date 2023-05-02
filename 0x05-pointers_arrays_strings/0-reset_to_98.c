@@ -4,7 +4,7 @@
 /**
  * reset_to_98 - check the code.
  *
- * @*n: check the parameter.
+ * @n: check the parameter.
  *
  */
 
