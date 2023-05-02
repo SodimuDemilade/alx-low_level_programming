@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <string.h>
 
 /**
  * puts2 - check the code.
@@ -11,7 +12,7 @@
 
 void puts2(char *str)
 {
-	int i;
+	long unsigned int i;
 
 	for (i = 0 ; i <= strlen(str) ; i = i + 2)
 	{
