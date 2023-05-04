@@ -3,7 +3,7 @@
 #include <string.h>
 
 /**
- * _strncpy - check teh code.
+ * _strncpy - check the code.
  *
  * @dest: check the parameters.
  *
