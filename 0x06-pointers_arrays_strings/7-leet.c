@@ -1,7 +1,8 @@
 #include "main.h"
 #include <stdio.h>
+#include <string.h>
 
-/*
+/**
  * leet - check the code.
  *
  * @str: check the parameter.
@@ -20,5 +21,11 @@ char *leet(char *str)
 		else if (str[i] == 'E' || str[i] == 'e')
 			str[i] = '3';
 		else if (str[i] == 'O' || str[i] == 'o')
+			str[i] = '0';
+		else if (str[i] == 't' || str[i] == 'T')
+			str[i] = '7';
+		else if (str[i] == 'l' || str[i] == 'L')
+			str[i] = '1';
 	}
+	return (str);
 }
