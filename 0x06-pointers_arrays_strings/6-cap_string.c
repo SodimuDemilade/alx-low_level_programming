@@ -20,14 +20,14 @@ char *cap_string(char *str)
 
 	for (i = 0 ; i < strlen(str) ; i++)
 	{
-		if (str[i] == '\t')
-			str[i] = ' ';
 		for (j = 0; j < strlen(arr) ; j++)
 		{
 			if (str[i] == arr[j])
 			{
 				str[i + 1] = toupper(str[i + 1]);
 			}
+			if (str[i] == '\t')
+				str[i] = ' ';
 		}
 	}
 	return (str);
