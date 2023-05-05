@@ -31,7 +31,7 @@ char *rot13(char *str)
 		for (j = 0 ; j < strlen(arr1) ; j++)
 		{
 			if (str[i] == arr1[j])
-					str[i] = arr2[j];
+				str[i] = arr2[j];
 		}
 	}
 	return (str);
