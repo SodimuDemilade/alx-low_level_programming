@@ -16,7 +16,7 @@
 char *cap_string(char *str)
 {
 	unsigned long int i, j;
-	char arr[12] = {',', ';', '.', '?', '"', '(', ')', '{', '}', '\n', ' ', '	'};
+	char arr[13] = {',', ';', '.', '?', '"', '(', ')', '{', '}', '\n', ' ', '	', '!'};
 
 	for (i = 0 ; i < strlen(str) ; i++)
 	{
