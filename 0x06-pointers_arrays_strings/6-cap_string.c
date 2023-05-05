@@ -3,7 +3,7 @@
 #include <string.h>
 #include <ctype.h>
 
-/*
+/**
  * cap_string - check the code.
  *
  * Description: something

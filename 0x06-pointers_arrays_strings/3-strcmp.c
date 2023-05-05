@@ -2,8 +2,8 @@
 #include <stdio.h>
 #include <string.h>
 
-/*
- *_strcmp - check the code.
+/**
+ * _strcmp - check the code.
  *
  * @s1: check the parameter.
  *
