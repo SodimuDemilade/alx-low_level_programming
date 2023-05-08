@@ -20,6 +20,7 @@ void print_chessboard(char (*a)[8])
 				continue;
 			putchar(a[i][j]);
 		}
-		putchar('\n');
+		if (i != 8)
+			putchar('\n');
 	}
 }
