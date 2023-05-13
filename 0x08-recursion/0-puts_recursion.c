@@ -9,16 +9,14 @@
  *
  */
 
+unsigned long int length;
+unsigned long int count = 0;
 void _puts_recursion(char *s)
 {
-	unsigned long int count = 0;
-	unsigned long int length;
-
 	length = strlen(s);
-	if (count < length) {
+	if (count >= length)
+		putchar('\n');
 	putchar(s[count]);
 	count++;
-	putchar('\n');
 	_puts_recursion(s);
-	}
 }
