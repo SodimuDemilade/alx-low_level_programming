@@ -22,10 +22,9 @@ char *str_concat(char *s1, char *s2)
 		s1 = " ";
 	if (s2 == NULL)
 		s2 = " ";
-	strcat(s1, s2);
 	nstr = malloc(sizeof(char) * tlen);
 	if (nstr == NULL)
 		return (NULL);
-	nstr = s1;
+	nstr = s1 + s2;
 	return (nstr);
 }
