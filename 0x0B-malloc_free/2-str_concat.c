@@ -13,7 +13,7 @@
  * Return: check the code.
  */
 
-char *str_concat(char *s1, char *s)
+char *str_concat(char *s1, char *s2)
 {
 	char *nstr;
 	unsigned int tlen = strlen(s1) + strlen(s2);
