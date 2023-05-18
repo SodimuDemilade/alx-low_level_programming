@@ -18,7 +18,7 @@ char **strtow(char *str)
 	char *token;
 	int count = 0;
 
-	if (str == NULL || str == " ")
+	if (str == NULL)
 		return (NULL);
 	arr = malloc(sizeof(char) * strlen(str));
 	if (arr == NULL)
