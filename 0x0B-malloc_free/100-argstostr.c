@@ -15,12 +15,12 @@
 
 char *argstostr(int ac, char **av)
 {
-	char "nstr;
+	char *nstr;
 	unsigned int tlen;
 
 	if (ac == 0 || av == NULL)
 		return (NULL);
-	tlen = strlen(av) + strlen(ac);
+	tlen = strlen(*av) + strlen(ac);
 	nstr = malloc(sizeof(char) * tlen);
 	if (nstr == NULL)
 		return (NULL);
