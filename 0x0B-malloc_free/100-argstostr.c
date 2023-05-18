@@ -22,13 +22,6 @@ char *argstostr(int ac, char **av)
 
 	if (ac == 0 || av == NULL)
 		return (NULL);
-	while(ac != 0)
-	{
-		ac = ac / 10;
-		count++;
-	}
-	str = malloc(sizeof(char) * count);
-	sprintf(str, "%d", ac);
 	tlen = strlen(*av) + strlen(str);
 	nstr = malloc(sizeof(char) * tlen);
 	if (nstr == NULL)
