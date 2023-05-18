@@ -17,14 +17,23 @@ char *argstostr(int ac, char **av)
 {
 	char *nstr;
 	unsigned int tlen;
+	int count;
 
 	if (ac == 0 || av == NULL)
 		return (NULL);
-	tlen = strlen(*av) + strlen(ac);
+	while(ac != 0)
+	{
+		ac = ac / 10;
+		count++;
+	}
+	char str[count];
+
+	sprintf(str, "%d", ac);
+	tlen = strlen(*av) + strlen(str);
 	nstr = malloc(sizeof(char) * tlen);
 	if (nstr == NULL)
 		return (NULL);
-	strcpy(nstr, av);
-	strcat(nstr, ac);
+	strcpy(nstr, *av);
+	strcat(nstr, str);
 	return (nstr);
 }
