@@ -18,13 +18,13 @@ char **strtow(char *str)
 	char *token;
 	int count = 0;
 
-	if (str == NULL)
+	if (str == NULL || str == "")
 		return (NULL);
-	arr = (char **)malloc(sizeof(char *) * strlen(str));
+	arr = (char **)malloc(sizeof(char *) * strlen(str) * strlen(str));
 	if (arr == NULL)
 		return (NULL);
 	token = strtok(str, " ");
-	while(token != NULL) 
+	while (token != NULL)
 	{
 		arr[count] = token;
 		token = strtok(NULL, " ");
