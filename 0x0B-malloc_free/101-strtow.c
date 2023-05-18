@@ -20,7 +20,7 @@ char **strtow(char *str)
 
 	if (str == NULL)
 		return (NULL);
-	arr = (int **)malloc(sizeof(char *) * strlen(str));
+	arr = (char **)malloc(sizeof(char *) * strlen(str));
 	if (arr == NULL)
 		return (NULL);
 	token = strtok(str, " ");
