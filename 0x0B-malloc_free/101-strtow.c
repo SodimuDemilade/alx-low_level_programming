@@ -14,7 +14,7 @@
 
 char **strtow(char *str)
 {
-	char *arr;
+	char **arr;
 	char *token;
 	int count = 0;
 
@@ -30,6 +30,5 @@ char **strtow(char *str)
 		token = strtok(NULL, " ");
 		count++;
 	}
-	arr[count + 1] = NULL;
 	return (arr);
 }
