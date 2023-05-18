@@ -14,15 +14,15 @@
 
 char **strtow(char *str)
 {
-	char **arr;
+	char **arr[10000];
 	char *token;
 	int count = 0;
 
 	if (str == NULL)
 		return (NULL);
-	arr = (char **)malloc(sizeof(char *) * strlen(str));
+	/*arr = (char **)malloc(sizeof(char *) * strlen(str));
 	if (arr == NULL)
-		return (NULL);
+		return (NULL);*/
 	token = strtok(str, " ");
 	while(token != NULL) 
 	{
