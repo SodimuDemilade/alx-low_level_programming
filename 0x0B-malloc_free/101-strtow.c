@@ -14,8 +14,9 @@
 
 char **strtow(char *str)
 {
-	char *arr;
+	char **arr;
 	char *token;
+	int count = 0;
 
 	if (str == NULL || str == "")
 		return (NULL);
