@@ -14,7 +14,7 @@
 
 char **strtow(char *str)
 {
-	char **arr[10000];
+	char *arr[10000];
 	char *token;
 	int count = 0;
 
