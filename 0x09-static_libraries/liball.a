@@ -1,0 +1,403 @@
+!<arch>
+0-putchar.c/    0           0     0     644     247       `
+#include <unistd.h>
+
+/**
+ * _putchar - writes the character c to stdout
+ * @c: The character to print
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
+int _putchar(char c)
+{
+	return (write(1, &c, 1));
+}
+
+3-islower.c/    0           0     0     644     254       `
+#include "main.h"
+#include <stdio.h>
+#include <ctype.h>
+
+/**
+ * _islower - check the code.
+ *
+ * @c:  parameter passed into _islower
+ *
+ * Return: Always 0.
+ */
+
+int _islower(int c)
+{
+	if (islower(c) == 0)
+	{
+		return (0);
+	}
+	else
+	{
+		return (1);
+	}
+}
+4-isalpha.c/    0           0     0     644     242       `
+#include "main.h"
+#include <stdio.h>
+#include <ctype.h>
+
+/**
+ * _isalpha - check the code.
+ *
+ * @c: check the parameter.
+ *
+ * Return: Always 0.
+ */
+
+int _isalpha(int c)
+{
+	if (isalpha(c) > 0)
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
+}
+6-abs.c/        0           0     0     644     186       `
+#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+/**
+ * _abs - check the code.
+ *
+ * @c: check the parameter.
+ *
+ * Return: Always 0.
+ */
+
+int _abs(int c)
+{
+	return (abs(c));
+}
+atoi.c/         0           0     0     644     239       `
+#include "main.h"
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+#include <stdlib.h>
+
+/**
+ * _atoi - check the code.
+ *
+ * @s: check the parameter.
+ *
+ * Return: check the code.
+ *
+ */
+
+int _atoi(char *s)
+{
+	return (atoi(s));
+}
+
+isdigit.c/      0           0     0     644     218       `
+#include "main.h"
+#include <ctype.h>
+
+/**
+ * _isdigit - check the code.
+ *
+ * @c: check the parameter.
+ *
+ * Return: check the code.
+ */
+
+int _isdigit(int c)
+{
+	if (isdigit(c) == 0)
+		return (0);
+	else
+		return (1);
+}
+is_upper.c/     0           0     0     644     212       `
+#include "main.h"
+#include <ctype.h>
+
+/**
+ * _isupper - check the code.
+ *
+ * @c: check the parameter.
+ *
+ * Return: Always 0.
+ */
+
+int _isupper(int c)
+{
+	if (isupper(c) == 0)
+		return (0);
+	else
+		return (1);
+}
+memcpy.c/       0           0     0     644     316       `
+#include "main.h"
+#include <stdio.h>
+#include <string.h>
+
+/**
+ * _memcpy - check the code.
+ *
+ * @dest: check the parameters.
+ *
+ * @src: check the parameters.
+ *
+ * @n: check teh parameters.
+ *
+ * Return: check the code.
+ */
+
+char *_memcpy(char *dest, char *src, unsigned int n)
+{
+	return (memcpy(dest, src, n));
+}
+memset.c/       0           0     0     644     299       `
+#include "main.h"
+#include <stdio.h>
+#include <string.h>
+
+/**
+ * _memset - check the code.
+ *
+ * @s: check the parameters
+ *
+ * @b: check the parameters.
+ *
+ * @n: check the parameters.
+ *
+ * Return: check the code.
+ */
+
+char *_memset(char *s, char b, unsigned int n)
+{
+	return (memset(s, b, n));
+}
+
+puts.c/         0           0     0     644     148       `
+#include "main.h"
+#include <stdio.h>
+
+/**
+ * _puts - check the code.
+ *
+ * @str: check the parameter.
+ *
+ */
+
+void _puts(char *str)
+{
+	puts(str);
+}
+strcat.c/       0           0     0     644     271       `
+#include "main.h"
+#include <stdio.h>
+#include <string.h>
+
+/**
+ * _strcat - check the code.
+ *
+ * @dest: check the parameters.
+ *
+ * @src: check the parameters
+ *
+ * Return: check the code.
+ */
+
+char *_strcat(char *dest, char *src)
+{
+	strcat(dest, src);
+	return (dest);
+}
+
+strchr.c/       0           0     0     644     249       `
+#include "main.h"
+#include <stdio.h>
+#include <string.h>
+
+/**
+ * _strchr - check the code.
+ *
+ * @s: check the parameters.
+ *
+ * @c: check the parameters.
+ *
+ * Return: check the code.
+ */
+
+char *_strchr(char *s, char c)
+{
+	return (strchr(s, c));
+}
+
+strcmp.c/       0           0     0     644     252       `
+#include "main.h"
+#include <stdio.h>
+#include <string.h>
+
+/**
+ * _strcmp - check the code.
+ *
+ * @s1: check the parameter.
+ *
+ * @s2: check the parameter.
+ *
+ * Return: check the code.
+ */
+
+int _strcmp(char *s1, char *s2)
+{
+	return (strcmp(s1, s2));
+}
+strcpy.c/       0           0     0     644     273       `
+#include "main.h"
+#include <stdio.h>
+#include <string.h>
+
+/**
+ * _strcpy - check the code.
+ *
+ * @dest: check the parameter.
+ *
+ * @src: check the parameter.
+ *
+ * Return: check the code.
+ *
+ */
+
+char *_strcpy(char *dest, char *src)
+{
+	strcpy(dest, src);
+	return (dest);
+}
+
+strlen.c/       0           0     0     644     207       `
+#include "main.h"
+#include <stdio.h>
+#include <string.h>
+
+/**
+ * _strlen - check the code.
+ *
+ * @s: check the parameter.
+ *
+ * Return: check the code.
+ *
+ */
+
+int _strlen(char *s)
+{
+	return (strlen(s));
+
+}
+
+strncat.c/      0           0     0     644     314       `
+#include "main.h"
+#include <stdio.h>
+#include <string.h>
+
+/**
+ * _strncat - check the code.
+ *
+ * @dest: check the parameter.
+ *
+ * @src: check the parameter.
+ *
+ * @n: check the parameter.
+ *
+ * Return: check the code.
+ */
+
+char *_strncat(char *dest, char *src, int n)
+{
+	strncat(dest, src, n);
+	return (dest);
+}
+strncpy.c/      0           0     0     644     317       `
+#include "main.h"
+#include <stdio.h>
+#include <string.h>
+
+/**
+ * _strncpy - check the code.
+ *
+ * @dest: check the parameters.
+ *
+ * @src: check the parameters.
+ *
+ * @n: check teh parameters.
+ *
+ * Return: check the code.
+ */
+
+char *_strncpy(char *dest, char *src, int n)
+{
+	strncpy(dest, src, n);
+	return (dest);
+}
+
+strpbrk.c/      0           0     0     644     269       `
+#include "main.h"
+#include <stdio.h>
+#include <string.h>
+
+/**
+ * _strpbrk - check the code.
+ *
+ * @s:  check the parameters.
+ *
+ * @accept: check the parameters.
+ *
+ * Return: check the code.
+ */
+
+char *_strpbrk(char *s, char *accept)
+{
+	return (strpbrk(s, accept));
+}
+
+strspn.c/       0           0     0     644     272       `
+#include "main.h"
+#include <stdio.h>
+#include <string.h>
+
+/**
+ * _strspn - check the code.
+ *
+ * @s: check the parameters.
+ *
+ * @accept: check the parameters.
+ *
+ * Return: check the code.
+ */
+
+unsigned int _strspn(char *s, char *accept)
+{
+	return (strspn(s, accept));
+}
+strstr.c/       0           0     0     644     286       `
+#include "main.h"
+#include <stdio.h>
+#include <string.h>
+
+/**
+ * _strstr - check the code.
+ *
+ * @haystack: check the parameters.
+ *
+ * @needle: check the parameters.
+ *
+ * Return: check the code.
+ */
+
+char *_strstr(char *haystack, char *needle)
+{
+	return (strstr(haystack, needle));
+}
