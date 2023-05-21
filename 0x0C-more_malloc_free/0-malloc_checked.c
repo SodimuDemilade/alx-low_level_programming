@@ -6,6 +6,8 @@
  * malloc_checked - check the code.
  *
  * @b: check the parameter.
+ *
+ * Return: check the code.
  */
 
 void *malloc_checked(unsigned int b)
