@@ -17,13 +17,15 @@ char **strtow(char *str)
 	char **arr;
 	char *token;
 	int count = 0;
+	char nstr[10000];
 
-	if (str == NULL)
+	strcpy(nstr, str);
+	if (nstr == NULL)
 		return (NULL);
 	arr = (char **)malloc(sizeof(char *) * strlen(str) * strlen(str));
 	if (arr == NULL)
 		return (NULL);
-	token = strtok(str, " ");
+	token = strtok(nstr, " ");
 	while (token != NULL)
 	{
 		arr[count] = token;
