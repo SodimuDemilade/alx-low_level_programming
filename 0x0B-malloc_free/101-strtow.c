@@ -22,7 +22,7 @@ char **strtow(char *str)
 	strcpy(nstr, str);
 	if (nstr == NULL)
 		return (NULL);
-	arr = malloc(sizeof(char *) * strlen(str));
+	arr = malloc(sizeof(char) * strlen(str));
 	if (arr == NULL)
 		return (NULL);
 	token = strtok(nstr, " ");
