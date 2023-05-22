@@ -1,6 +1,19 @@
+#ifndef _DOG_H_
+#define _DOG_H_
+/**
+ * struct dog - check the code.
+ *
+ * @name: check the parameters.
+ *
+ * @age: check the parameters.
+ *
+ * @owner: check the parameters.
+ */
+
 struct dog
 {
-        char *name;
-        float age;
-        char *owner;
+	char *name;
+	float age;
+	char *owner;
 };
+#endif /* ifndef _DOG_H_ */
