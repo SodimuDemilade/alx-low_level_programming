@@ -1,5 +1,6 @@
 #include "dog.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * print_dog - check the code.
@@ -11,7 +12,7 @@
 void print_dog(struct dog *d)
 {
 	if (d == NULL)
-		printf("Nothing");
+		exit();
 	if (d->name == NULL)
 		printf("Name: (nil)");
 	else
