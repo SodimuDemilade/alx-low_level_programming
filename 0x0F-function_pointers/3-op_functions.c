@@ -2,22 +2,10 @@
 #include <stdio.h>
 
 /**
- * op_add - adds two numbers.
- **
- * op_sub - subtracts two numbers.
- *
- * op_mul - multiplies two numbers.
- *
- * op_div - divides two numbers.
- *
- * op_mod - performs modulus.
- *
+ * op_add - subtracts two numbers.
  * @a: first number.
- *
  * @b: second number.
- *
- * Return: check the code.
- *
+ * Return: returns the result.
  */
 int op_add(int a, int b)
 {
@@ -26,6 +14,12 @@ int op_add(int a, int b)
 	return (sum);
 }
 
+/**
+ * op_sub - subtracts two numbers.
+ * @a: first number.
+ * @b: second number.
+ * Return: returns the result.
+ */
 int op_sub(int a, int b)
 {
 	int sub = a - b;
@@ -33,6 +27,12 @@ int op_sub(int a, int b)
 	return (sub);
 }
 
+/**
+ * op_mul - subtracts two numbers.
+ * @a: first number.
+ * @b: second number.
+ * Return: returns the result.
+ */
 int op_mul(int a, int b)
 {
 	int mul = a * b;
@@ -40,6 +40,12 @@ int op_mul(int a, int b)
 	return (mul);
 }
 
+/**
+ * op_div - subtracts two numbers.
+ * @a: first number.
+ * @b: second number.
+ * Return: returns the result.
+ */
 int op_div(int a, int b)
 {
 	int div = a / b;
@@ -47,6 +53,12 @@ int op_div(int a, int b)
 	return (div);
 }
 
+/**
+ * op_mod - subtracts two numbers.
+ * @a: first number.
+ * @b: second number.
+ * Return: returns the result.
+ */
 int op_mod(int a, int b)
 {
 	int mod = a % b;
