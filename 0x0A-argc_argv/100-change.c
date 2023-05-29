@@ -22,12 +22,12 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-	if (atoi(argv[1]) < 0)
-	{
-		printf("%d\n", 0);
-	}
 	num = atoi(argv[1]);
-	for (i = 0 ; i < 5 ; i++)
+	if (num < 0)
+	{
+		printf("0\n");
+	}
+	for (i = 0 ; i < 5 && num >= 0 ; i++)
 	{
 		while (num >= coins[i])
 		{
