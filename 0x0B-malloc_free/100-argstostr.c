@@ -34,12 +34,12 @@ char *argstostr(int ac, char **av)
 	{
 		for (n = 0 ; av[i][n] ; n++)
 		{
-			str[r] = av[i][n];
+			nstr[r] = av[i][n];
 			r++;
 		}
-		if (str[r] == '\0')
+		if (nstr[r] == '\0')
 		{
-			str[r++] = '\n';
+			nstr[r++] = '\n';
 		}
 	}
 	return (nstr);
