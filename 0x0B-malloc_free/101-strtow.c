@@ -20,7 +20,7 @@ char **strtow(char *str)
 	char nstr[10000];
 
 	strcpy(nstr, str);
-	if (nstr == NULL)
+	if (nstr == NULL || nstr == "")
 		return (NULL);
 	arr = malloc(sizeof(char *) * strlen(str));
 	if (arr == NULL)
