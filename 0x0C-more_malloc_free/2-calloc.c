@@ -2,35 +2,13 @@
 #include <stdlib.h>
 
 /**
- * memset - check the code.
- *
- * @s: check the parameters.
- *
- * @b: check the parameters.
- *
- * @n: check the parameters.
- *
- * Return: check the code.
- *
-
-char *_memset(char *s, char *b, char *n)
-{
-	unsigned int i;
-
-	for (i = 0 ; i < n ; i++)
-	{
-		s[i] = b;
-	}
-	return (s);
-}*/
-
-/**
  * _calloc - check the code.
  *
  * @nmemb: check the parameters.
  *
  * @size: check the parameters.
  *
+ * Return: check the code.
  */
 
 void *_calloc(unsigned int nmemb, unsigned int size)
