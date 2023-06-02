@@ -1,20 +1,17 @@
 section .data
-	myvar db 'Hello, Holberton', 0
+	myvar db 'Hello, Holberton', 10
 	format db "%s", 0
 
 section .text
 	global _start
 
 _start:
-	mov rdi, format
+	mov rax, 1
+	mov rdi, 1
 	mov rsi, myvar
-	xor rax, rax
-
-	call printf
-
-	mov eax, 60
-	xor edi, edi
+	mov rdx, 13
 	syscall
-
-section .data
-	extern printf
+	
+	mov rax, 60
+	mov rdi, 0
+	syscall
