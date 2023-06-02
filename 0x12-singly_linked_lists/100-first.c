@@ -4,11 +4,10 @@
 /**
  * myprint - check the code.
  *
- * @str: check the parameter.
- *
  */
 
-void myprint()
+void myprint(void)
 {
-	printf("You're beat! and yet, you must allow,\nI bore my house upon my back!\n");
+	printf("You're beat! and yet, you must allow,\n"
+			"I bore my house upon my back!\n");
 }
