@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "main.h"
 #include <stdlib.h>
 
 int _atoi(char *a);
