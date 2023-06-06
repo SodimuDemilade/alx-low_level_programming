@@ -25,7 +25,7 @@ int _atoi(char *a)
 			num = a[i] - '0';
 			if (j % 2)
 				num = -num;
-			k = k * 10 + digit;
+			k = k * 10 + num;
 			l = 1;
 			if (a[i + 1] < '0' || a[i + 1] > '9')
 				break;
