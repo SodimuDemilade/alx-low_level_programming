@@ -14,7 +14,7 @@
 
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
-	unsigned count = 0;
+	unsigned int count = 0;
 	listint_t *var = head;
 
 	while (var && count < index)
