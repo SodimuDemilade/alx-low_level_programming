@@ -22,7 +22,7 @@ int word_len(char *a)
 	i = 0;
 	for (j = 0 ; a[j] != '\0' ; j++)
 	{
-		if (a[j] == '')
+		if (a[j] == ' ')
 			count = 0;
 		else if (count == 0)
 		{
@@ -48,7 +48,7 @@ char **strtow(char *str)
 	char *token;
 	int k, j = 0, count = 0, words, l = 0, begin, end;
 
-	while (*(str + len))
+	while (*(str + count))
 		count++;
 	words = word_len(str);
 	if (words == 0)
@@ -58,15 +58,15 @@ char **strtow(char *str)
 		return (NULL);
 	for (k = 0 ; k <= count ; k++)
 	{
-		if (str[k] == '' || str[k] == '\0')
+		if (str[k] == ' ' || str[k] == '\0')
 		{
 			if (l)
 			{
 				end = k;
-				token = (char *)malloc((c + 1) * (sizeof(char)));
+				token = (char *)malloc((l + 1) * (sizeof(char)));
 				if (token == NULL)
 					return (NULL);
-				while (start < end)
+				while (begin < end)
 					*token++ = str[begin++];
 				*token = '\0';
 				arr[j] = token - l;
