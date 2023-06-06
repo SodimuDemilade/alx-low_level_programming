@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <stdlib.h>
 
 /**
  * insert_nodeint_at_index - check the code.
@@ -30,7 +31,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		*head = var;
 		return (var);
 	}
-	for (count = 0 ; value && count < idx ; i++)
+	for (count = 0 ; value && count < idx ; count++)
 	{
 		if (count == idx - 1)
 		{
