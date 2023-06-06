@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 #include <ctype.h>
 #include <stdlib.h>
 
@@ -49,8 +50,8 @@ int main(int argc, char *argv[])
 		{
 			if (check_number(argv[i]))
 			{
-				j = atoi(argv[count]);
-				add += j
+				j = atoi(argv[i]);
+				add += j;
 			}
 			else
 			{
