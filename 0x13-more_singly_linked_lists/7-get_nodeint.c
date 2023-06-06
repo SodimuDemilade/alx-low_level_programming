@@ -20,7 +20,7 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 	while (var && count < index)
 	{
 		var = var->next;
-		count++
+		count++;
 	}
 	return (var ? var : NULL);
 }
