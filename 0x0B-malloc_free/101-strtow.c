@@ -53,7 +53,7 @@ char **strtow(char *str)
 	words = word_len(str);
 	if (words == 0)
 		return (NULL);
-	arr = (char**)malloc((words + 1) * sizeof(char *));
+	arr = (char **)malloc((words + 1) * sizeof(char *));
 	if (arr == NULL)
 		return (NULL);
 	for (k = 0 ; k <= count ; k++)
