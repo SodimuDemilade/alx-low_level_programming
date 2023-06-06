@@ -3,6 +3,36 @@
 #include <string.h>
 #include <stdio.h>
 
+int word_len(char *a);
+
+/**
+ * word_len - check the code.
+ *
+ * @a: check the parameter.
+ *
+ * Return: check the code.
+ *
+ */
+
+int word_len(char *a)
+{
+	int count, i, j;
+
+	count = 0;
+	i = 0;
+	for (j = 0 ; a[j] != '\0' ; j++)
+	{
+		if (a[j] == '')
+			count = 0;
+		else if (count == 0)
+		{
+			count = 1;
+			i++;
+		}
+	}
+	return (i);
+}
+
 /**
  * strtow - check the code.
  *
@@ -16,21 +46,37 @@ char **strtow(char *str)
 {
 	char **arr;
 	char *token;
-	int count = 0;
-	char nstr[10000];
+	int k, j = 0, count = 0, words, l = 0, begin, end;
 
-	strcpy(nstr, str);
-	if (nstr == NULL || nstr == "")
+	while (*(str + len))
+		count++;
+	words = word_len(str);
+	if (words == 0)
 		return (NULL);
-	arr = malloc(sizeof(char *) * strlen(str));
+	arr = (char**)malloc((words + 1) * sizeof(char *));
 	if (arr == NULL)
 		return (NULL);
-	token = strtok(nstr, " ");
-	while (token != NULL)
+	for (k = 0 ; k <= count ; k++)
 	{
-		arr[count] = token;
-		token = strtok(NULL, " ");
-		count++;
+		if (str[k] == '' || str[k] == '\0')
+		{
+			if (l)
+			{
+				end = k;
+				token = (char *)malloc((c + 1) * (sizeof(char)));
+				if (token == NULL)
+					return (NULL);
+				while (start < end)
+					*token++ = str[begin++];
+				*token = '\0';
+				arr[j] = token - l;
+				j++;
+				l = 0;
+			}
+		}
+		else if (l++ == 0)
+			begin = k;
 	}
+	arr[j] = NULL;
 	return (arr);
 }
