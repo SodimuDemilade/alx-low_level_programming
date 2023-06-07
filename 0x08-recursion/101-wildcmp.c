@@ -1,4 +1,4 @@
-#include "main.h" 
+#include "main.h"
 
 /**
  * wildcmp - check.
@@ -6,6 +6,8 @@
  * @s1: check.
  *
  * @s2: check.
+ *
+ * Return: check.
  *
  */
 
