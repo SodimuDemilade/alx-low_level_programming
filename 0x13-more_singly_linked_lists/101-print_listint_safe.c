@@ -42,7 +42,7 @@ size_t listint_len_loop(const listint_t *head)
 			return (a);
 		}
 		first = first->next;
-		second = (second->neext)->next;
+		second = (second->next)->next;
 	}
 	return (0);
 }
@@ -63,10 +63,10 @@ size_t print_listint_safe(const listint_t *head)
 	a = listint_len_loop(head);
 	if (a == 0)
 	{
-		for (; head != NULL ; nodes++)
+		for (; head != NULL ; a++)
 		{
-			printf("[%p] %d\n", (void *)head, head->n)
-				head = head->next;
+			printf("[%p] %d\n", (void *)head, head->n);
+			head = head->next;
 		}
 	}
 	else
