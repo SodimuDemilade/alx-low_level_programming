@@ -6,7 +6,7 @@
  *
  * @head: check.
  *
- * @idx: check.
+ * @index: check.
  *
  * Return: check.
  *
