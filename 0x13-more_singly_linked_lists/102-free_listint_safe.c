@@ -4,7 +4,7 @@
 /**
  * free_listint_safe - check.
  *
- * @head: check.
+ * @h: check.
  *
  * Return: check.
  *
