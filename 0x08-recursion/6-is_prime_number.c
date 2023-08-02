@@ -5,7 +5,7 @@ int prime(int a, int b);
 /**
  * is_prime_number - main
  *
- * @n: check 
+ * @n: check
  *
  * Return: check
  *
