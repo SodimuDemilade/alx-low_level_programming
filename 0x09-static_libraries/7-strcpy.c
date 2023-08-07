@@ -3,19 +3,18 @@
 #include <string.h>
 
 /**
- * _strncpy - check the code.
+ * _strcpy - check the code.
  *
- * @dest: check the parameters.
+ * @dest: check the parameter.
  *
- * @src: check the parameters.
- *
- * @n: check teh parameters.
+ * @src: check the parameter.
  *
  * Return: check the code.
+ *
  */
 
-char *_strncpy(char *dest, char *src, int n)
+char *_strcpy(char *dest, char *src)
 {
-	strncpy(dest, src, n);
+	strcpy(dest, src);
 	return (dest);
 }
