@@ -9,6 +9,8 @@
  *
  * @s2: check
  *
+ * Return: check
+ *
  */
 
 char *str_concat(char *s1, char *s2)
@@ -24,5 +26,5 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 	strcpy(dest, s1);
 	strcat(dest, s2);
-	return dest;
+	return (dest);
 }
