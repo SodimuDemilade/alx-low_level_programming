@@ -20,9 +20,9 @@ char *argstostr(int ac, char **av)
 
 	if (ac == 0 || av == NULL)
 		return (NULL);
-	for (i = 0 ; i <= ac ; i++)
+	for (i = 0 ; i < ac ; i++)
 	{
-		total += strlen(av[i]) + 1;
+		total += strlen(av[i]) + 2;
 	}
 	b = malloc(sizeof(char) * total);
 	if (b == NULL)
