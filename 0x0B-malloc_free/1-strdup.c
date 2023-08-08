@@ -3,7 +3,7 @@
 #include <string.h>
 
 /**
- * strdup - main
+ * _strdup - main
  *
  * @str: check
  *
@@ -17,7 +17,7 @@ char *_strdup(char *str)
 
 	if (str == NULL)
 		return (NULL);
-	mystr = malloc(sizeof(str));
+	mystr = malloc(sizeof(char) * strlen(str));
 	if (mystr == NULL)
 		return (NULL);
 	mystr = strdup(str);
