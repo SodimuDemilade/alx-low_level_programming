@@ -6,6 +6,8 @@
  *
  * @b: check
  *
+ * Return: check
+ *
  */
 
 void *malloc_checked(unsigned int b)
@@ -13,6 +15,6 @@ void *malloc_checked(unsigned int b)
 	void *num = malloc(b);
 
 	if (num == NULL)
-		exit (98);
+		exit(98);
 	return (num);
 }
