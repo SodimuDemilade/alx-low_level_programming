@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "main.h"
+#include "function_pointers.h"
 
 /**
  * print_name_as_is - prints a name as is
@@ -47,6 +47,8 @@ int main(void)
 {
     print_name("Bob", print_name_as_is);
     print_name("Bob Dylan", print_name_uppercase);
+    print_name("Hodor", &print_name_uppercase);
+    print_name("Hodor", NULL);
     printf("\n");
     return (0);
 }
