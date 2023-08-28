@@ -3,9 +3,9 @@
 #include "lists.h"
 
 /**
- * add_nodeint - main
+ * add_nodeint_end - main
  *
- * @head - input
+ * @head: input
  *
  * @n: input
  *
