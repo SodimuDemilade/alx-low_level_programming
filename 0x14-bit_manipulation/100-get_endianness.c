@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 /**
- * get_endiannes - main
+ * get_endianness - main
+ *
  *
  * Return: result
  *
@@ -11,10 +12,10 @@ int get_endianness(void)
 {
 	union
 	{
-		int integer;
+		int num;
 		char bytes[sizeof(int)];
-	} check_endian;
+	} check;
 
-	check_endian.integer = 1;
-	return check_endian.bytes[0] == 1 ? 1 : 0;
+	check.num = 1;
+	return (check.bytes[0] == 1 ? 1 : 0);
 }
