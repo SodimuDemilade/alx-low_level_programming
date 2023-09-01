@@ -1,4 +1,4 @@
-#include <stdio,h>
+#include <stdio.h>
 
 /**
  * set_bit - main
@@ -13,5 +13,11 @@
 
 int set_bit(unsigned long int *n, unsigned int index)
 {
-	
+	unsigned long int mask, one = 1;
+
+	if (index >= (sizeof(unsigned long int) * 8))
+		return (-1);
+	mask = one << index;
+	*n |= mask;
+	return (1);
 }
